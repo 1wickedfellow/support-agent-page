@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Generated output
+dist/
+build/
+
+# Caches
+.cache/
+coverage/
+
+# Logs
+*.log
+
+# Environment secrets
+.env
+.env.*
+
+# Keep the example environment file
+!.env.example
+
+# Editor settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

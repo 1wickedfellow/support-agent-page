@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
