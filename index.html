@@ -3,18 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Support Agent</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <main>
-        <h1>Support Agent</h1>
-        <p>Welcome to the support agent workspace.</p>
 
-        <button id="startButton">Get Started</button>
+    <main class="support-agent">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>Support Agent</h1>
+                <p>Welcome to the support agent workspace.</p>
+            </div>
+
+            <button id="startButton">Get Started</button>
+        </header>
+
+
+        <!-- Search -->
+        <section class="search-section">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search conversations..."
+            >
+        </section>
+
+
+        <!-- Main workspace -->
+        <section class="workspace">
+
+            <!-- Conversations -->
+            <div class="conversation-panel">
+
+                <h2>Conversations</h2>
+
+                <div id="conversationList">
+
+                    <button
+                        class="conversation"
+                        data-customer="Customer Support"
+                    >
+                        Customer Support
+                    </button>
+
+                    <button
+                        class="conversation"
+                        data-customer="Billing Question"
+                    >
+                        Billing Question
+                    </button>
+
+                    <button
+                        class="conversation"
+                        data-customer="Technical Issue"
+                    >
+                        Technical Issue
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Customer -->
+            <div class="customer-panel">
+
+                <h2>Customer</h2>
+
+                <div id="customerInfo">
+                    <p>Select a conversation to view customer information.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Message area -->
+        <section class="message-section">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+            >
+
+            <button id="sendButton">
+                Send
+            </button>
+
+        </section>
+
     </main>
 
+
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
+
 </body>
 </html>
